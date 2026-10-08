@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.xtrasxtra" name="XtrasXtra Repository" version="1.0.0" provider-name="Sascha">
+    <requires>
+        <import addon="xbmc.addon" version="18.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="XtrasXtra Repository">
+        <dir minversion="19.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/Xtra1978/XtrasXtra_Repo/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Xtra1978/XtrasXtra_Repo/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Xtra1978/XtrasXtra_Repo/main/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">XtrasXtra Repository</summary>
+        <summary lang="en_GB">XtrasXtra Repository</summary>
+        <description lang="de_DE">Repository für die Kodi-Addons von XtrasXtra.</description>
+        <description lang="en_GB">Repository for XtrasXtra Kodi add-ons.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <source>https://github.com/Xtra1978/XtrasXtra_Repo</source>
+    </extension>
+</addon>

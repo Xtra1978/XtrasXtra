@@ -1,0 +1,611 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.xtrasxtra" name="XtrasXtra Repository" version="1.0.0" provider-name="Sascha">
+    <requires>
+        <import addon="xbmc.addon" version="18.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="XtrasXtra Repository">
+        <dir minversion="19.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/Xtra1978/XtrasXtra_Repo/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Xtra1978/XtrasXtra_Repo/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Xtra1978/XtrasXtra_Repo/main/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">XtrasXtra Repository</summary>
+        <summary lang="en_GB">XtrasXtra Repository</summary>
+        <description lang="de_DE">Repository für die Kodi-Addons von XtrasXtra.</description>
+        <description lang="en_GB">Repository for XtrasXtra Kodi add-ons.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <source>https://github.com/Xtra1978/XtrasXtra_Repo</source>
+    </extension>
+</addon>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.fluxfm"
+       name="FluxFM"
+       version="1.0.0"
+       provider-name="Sascha">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">FluxFM - Radio so bunt wie Berlin</summary>
+    <summary lang="en_GB">FluxFM - Berlin's independent radio</summary>
+    <description lang="de_DE">Live-Streams, Genres und Mediathek von FluxFM Berlin. Inoffizielles Addon.</description>
+    <description lang="en_GB">Live streams, genres and media library of FluxFM Berlin. Unofficial addon.</description>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <source>https://www.fluxfm.de/</source>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.kibeats"
+       name="KiBeats"
+       version="0.1.0"
+       provider-name="Sascha">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">KiBeats.net Musik-Streaming</summary>
+        <summary lang="en_GB">KiBeats.net music streaming</summary>
+        <description lang="de_DE">Streamt KI-generierte Musik von KiBeats.net - Deutschlands erster KI-Musik-Streaming-Plattform. Kein Download, kein Musik-Upload/-Erstellen, reines Streaming.</description>
+        <description lang="en_GB">Streams AI-generated music from KiBeats.net - Germany's first AI music streaming platform. No downloads, no music creation, streaming only.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <source>https://github.com/</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.lautfm" name="Laut.fm" version="1.1.0" provider-name="Sascha">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Laut.fm – über 100.000 Internetradios</summary>
+    <summary lang="en_GB">Laut.fm – 100,000+ internet radio stations</summary>
+    <description lang="de_DE">Durchsuche und höre die Sender der Laut.fm-Plattform: nach Genre, per Suche, alphabetisch oder gefiltert nach aktuell live sendenden Stationen. Eigene Favoriten lassen sich lokal speichern.</description>
+    <description lang="en_GB">Browse and listen to Laut.fm stations by genre, search, alphabetically, or filtered by stations currently live. Save your own local favourites.</description>
+    <disclaimer lang="de_DE">Dieses Addon ist inoffiziell und steht in keiner Verbindung zur Laut AG. Alle Inhalte werden über die öffentliche laut.fm API bezogen.</disclaimer>
+    <disclaimer lang="en_GB">This is an unofficial addon and is not affiliated with Laut AG. All content is fetched via the public laut.fm API.</disclaimer>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <source>https://laut.fm</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.audio.librivox"
+       name="LibriVox"
+       version="1.0.0"
+       provider-name="LibriVox Kodi Addon">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">LibriVox – Free public domain audiobooks in Kodi</summary>
+    <summary lang="de">LibriVox – Kostenlose gemeinfreie Hoerbuecher in Kodi</summary>
+    <description lang="en">
+      Access the complete LibriVox catalogue in Kodi. Over 15,000 free public domain
+      audiobooks read by volunteers. Browse by genre, language, author or search the
+      full catalogue. All content is free, no login required.
+      Includes LibriVox podcast feed.
+    </description>
+    <description lang="de">
+      Zugang zum vollstaendigen LibriVox-Katalog in Kodi. Ueber 15.000 kostenlose
+      gemeinfreie Hoerbuecher, vorgelesen von Freiwilligen. Nach Genre, Sprache,
+      Autor suchen oder den gesamten Katalog durchstoebern.
+      Alle Inhalte kostenlos, kein Login erforderlich.
+      Inkl. LibriVox-Podcast-Feed.
+    </description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <website>https://librivox.org</website>
+    <language>en de</language>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+
+</addon>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.audio.nrwlokalradio"
+       name="NRW Lokalradio"
+       version="1.7.2"
+       provider-name="NRW Lokalradio Addon">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">NRW Lokalradio – Alle 45 Programme (44 Lokalradios + Radio NRW Rahmenprogramm) in Kodi</summary>
+    <summary lang="en">NRW Lokalradio – All 45 programmes (44 local radios + Radio NRW framework program) in Kodi</summary>
+    <description lang="de">
+      Alle 45 Programme (44 Lokalradios + Radio NRW Rahmenprogramm) direkt in Kodi – übersichtlich nach Region gegliedert.
+      Ruhrgebiet, Münsterland, Rheinland, OWL, Bergisches Land, Sauerland und mehr.
+      Inklusive Radio NRW Rahmenprogramm. Alle Streams in MP3-Qualität.
+    </description>
+    <description lang="en">
+      All 45 programmes (44 local radios + Radio NRW framework program) directly in Kodi – organized by region.
+      Ruhr area, Münsterland, Rhineland, OWL, Bergisches Land, Sauerland and more.
+      Including Radio NRW framework program. All streams in MP3 quality.
+    </description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <website>https://radionrw.de</website>
+    <language>de</language>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.radioparadise" name="Radio Paradise" version="0.2.0" provider-name="Sascha">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Radio Paradise – alle Kanäle in allen Qualitäten</summary>
+    <summary lang="en_GB">Radio Paradise – all channels in all qualities</summary>
+    <description lang="de_DE">Hört alle Radio-Paradise-Kanäle (Main, Mellow, Rock, Global, Beyond, Serenity, Radio 2050, KFAT) in Qualitäten von 32k AAC+ bis FLAC. Qualität in den Einstellungen oder per Kontextmenü pro Start wählbar.</description>
+    <description lang="en_GB">Listen to all Radio Paradise channels (Main, Mellow, Rock, Global, Beyond, Serenity, Radio 2050, KFAT) in qualities from 32k AAC+ up to FLAC. Quality can be set in the settings or chosen per start via the context menu.</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <website>https://radioparadise.com</website>
+    <news>0.2.0: Live-Update von Titel und Cover</news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.rappersin" name="Rappers.in" version="0.4.0" provider-name="Sascha">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Rappers.in – Beats, Songs, Top 50 und Alben</summary>
+    <summary lang="en_GB">Rappers.in – beats, songs, top 50 and albums</summary>
+    <description lang="de_DE">Addon für rappers.in: Startseite, Beats, Songs nach Genres, Neue Musik, Top-50-Listen und Alben. Free-Modus ohne Anmeldung oder Login mit dem eigenen kostenlosen Konto für mehr Ergebnisse.</description>
+    <description lang="en_GB">Addon for rappers.in: home, beats, songs by genre, new music, top 50 lists and albums. Free mode without an account, or log in with your own free account for more results.</description>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.rsnradio" name="RSN.Radio" version="2.1.0" provider-name="kodinerds.net">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">RSN.Radio – Radio Summernight Netzwerk (15 Sender)</summary>
+        <summary lang="en_GB">RSN.Radio – Radio Summernight Network (15 stations)</summary>
+        <description lang="de_DE">Spielt alle 15 Livestreams des RSN-Senderverbunds (Radio Summernight, Aarau/Rüti CH) direkt in Kodi ab: Radio Summernight, 80er/90er, 1000 Weihnachten, Kuschelrock, Deutschrock, 1000 Hiphop, Rap, Trap, 1000 Techno, 1000 Discofox, 1000 Dance, 1000 Indie, Lebkuchen Radio, Rock Music und Country Music. Optional zeigt das Addon den aktuell gespielten Titel an.</description>
+        <description lang="en_GB">Plays all 15 live streams of the RSN station network (Radio Summernight, Aarau/Rüti CH) directly in Kodi: Radio Summernight, 80er/90er, 1000 Weihnachten, Kuschelrock, Deutschrock, 1000 Hiphop, Rap, Trap, 1000 Techno, 1000 Discofox, 1000 Dance, 1000 Indie, Lebkuchen Radio, Rock Music and Country Music. The addon can optionally display the currently playing track.</description>
+        <disclaimer lang="de_DE">Dies ist ein inoffizielles Addon der kodinerds.net-Community und steht in keiner Verbindung zu Radio Summernight / RSN.Radio. Alle Sender-Logos sind Eigentum der jeweiligen Sender und werden ausschliesslich zur Senderkennung verwendet.</disclaimer>
+        <disclaimer lang="en_GB">This is an unofficial addon by the kodinerds.net community and is not affiliated with Radio Summernight / RSN.Radio. All station logos remain the property of their respective stations and are used solely for station identification.</disclaimer>
+        <platform>all</platform>
+        <license>MIT</license>
+        <website>https://rsn.radio/</website>
+        <source>https://www.kodinerds.net/</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.audio.schwarzwaldradio"
+       name="Schwarzwaldradio"
+       version="1.1.0"
+       provider-name="Schwarzwaldradio Fan">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">Schwarzwaldradio – Oldies. Neu. Entdecken.</summary>
+    <summary lang="en">Schwarzwaldradio – Oldies. Rediscovered.</summary>
+    <description lang="de">
+      Schwarzwaldradio in Kodi: Live-Stream, alternative Streams, Mediathek/Podcasts
+      und alle Inhalte der offiziellen Website. Musik von den 60ern bis 90ern,
+      Sondersendungen, Soul, Rock, Disco, Country und mehr.
+    </description>
+    <description lang="en">
+      Schwarzwaldradio for Kodi: Live stream, alternative streams, media library/podcasts
+      and all content from the official website. Music from the 60s to 90s,
+      special shows, Soul, Rock, Disco, Country and more.
+    </description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <website>https://www.schwarzwaldradio.com</website>
+    <email>info@schwarzwaldradio.com</email>
+    <forum/>
+    <source/>
+    <language>de</language>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.soundwave1"
+       name="SoundWave 1"
+       version="0.13.3"
+       provider-name="Sascha">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Bundles free and legal music archives (PD/FM) plus curated mainstream sources</summary>
+    <summary lang="de_DE">Bündelt freie und legale Musikarchive (PD/FM) sowie kuratierte Mainstream-Quellen</summary>
+    <description lang="en_GB">SoundWave 1 aggregates multiple free music archives (Public Domain, Creative Commons, Free Music) as well as legally streamable mainstream sources into a single Kodi music addon - with your own favourites (MySounds), custom playlists (MyLists), shuffle play, and a playlist generator (SW1 Generator).</description>
+    <description lang="de_DE">SoundWave 1 bündelt mehrere freie Musikarchive (Public Domain, Creative Commons, Free Music) sowie legal streambare Mainstream-Quellen in einem Kodi-Musik-Addon - mit eigenen Favoriten (MySounds), eigenen Playlisten (MyLists), Shuffle Play und einem Playlist-Generator (SW1 Generator).</description>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.xcastportal"
+       name="XCast-Portal"
+       version="0.6.2"
+       provider-name="Sascha">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="script.module.feedparser" version="6.0.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.6.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Portal-Addon für internationale Podcast-Verzeichnisse</summary>
+        <summary lang="en_GB">Portal addon for international podcast directories</summary>
+        <description lang="de_DE">XCast-Portal bündelt mehrere kostenlose, loginfreie Podcast-Verzeichnisse (DE, US, UK, international) in einem einheitlichen Kodi-Menü.</description>
+        <description lang="en_GB">XCast-Portal bundles several free, login-free podcast directories (DE, US, UK, international) into one unified Kodi menu.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://github.com/</source>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.thegarbagetool" name="The Garbage Tool" version="0.6.1" provider-name="Sascha">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Aufräumwerkzeuge für Kodi: Thumbnails, Cache, Pakete, Addons, Favoriten und Quellen</summary>
+        <summary lang="en_GB">Cleanup tools for Kodi: thumbnails, cache, packages, addons, favourites and sources</summary>
+        <description lang="de_DE">The Garbage Tool räumt Kodi auf: Thumbnail-, Cache- und Packages-Cleaner, Entfernen von Playlists, Favoriten, Medienquellen, PVR-Clients, Repositories und Addons, Abhängigkeitsprüfung, Bereinigung verwaister Daten Log-Analyse mit teilbarem Fehlerbericht ein Entwickler-Kit (Addon-Linter, Sprachdatei-Prüfer, Repository-Builder), eine Speicherübersicht, Datenbank- und Bibliothekswartung sowie Sicherung und Wiederherstellung. Vor Änderungen an favourites.xml und sources.xml wird automatisch eine Sicherung angelegt.</description>
+        <description lang="en_GB">The Garbage Tool tidies up Kodi: thumbnail, cache and packages cleaners, removal of playlists, favourites, media sources, PVR clients, repositories and addons, a dependency check, cleanup of orphaned data a log analyser with a shareable error report a developer kit (addon linter, language file checker, repository builder), a storage overview, database and library maintenance and backup and restore. A backup is created automatically before favourites.xml or sources.xml is changed.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <news>0.6.1: Verwaiste Daten prüfen jetzt auch die Addon-Ordner auf der Platte, Datenbank-Einträge werden mit Addon-IDs angezeigt</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.adarchive"
+       name="Ad Archive"
+       version="2.0.0"
+       provider-name="Ad Archive Kodi Addon">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Ad Archive – Historic commercials from around the world</summary>
+    <summary lang="de">Ad Archive – Historische Werbefilme aus aller Welt</summary>
+    <description lang="en">
+      Thousands of historic commercials directly streamable: Duke AdViews Collection
+      (8,800+ US spots 1950s-80s), Prelinger Archives, Ad Council PSA archive,
+      Classic TV Commercials, GDR commercials and more. All via Internet Archive.
+      No login, no ads, free streaming.
+    </description>
+    <description lang="de">
+      Tausende historische Werbefilme direkt streambar: Duke AdViews Collection,
+      Prelinger Archives, Ad Council PSA-Archiv, Classic TV Commercials,
+      DDR Werbefilme und viele mehr. Alles via Internet Archive.
+      Kein Login, keine Werbung, kostenlos.
+    </description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <website>https://archive.org</website>
+    <language>en de</language>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.df1" name="DF1" version="0.7.0" provider-name="DF1 Kodi Addon">
+  <requires><import addon="xbmc.python" version="3.0.0"/><import addon="inputstream.adaptive" optional="true"/></requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py"><provides>video</provides></extension>
+  <extension point="xbmc.addon.metadata"><summary lang="de_DE">DF1 Mediathek und Live-TV</summary><description lang="de_DE">Dynamisches DF1-Videoaddon mit Mediathek, Preroll und Live-TV.</description><platform>all</platform><assets><icon>icon.png</icon><fanart>fanart.jpg</fanart><screenshot>resources/media/background.jpg</screenshot></assets></extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.efg"
+       name="European Film Gateway"
+       version="1.0.0"
+       provider-name="EFG Kodi Addon">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">European Film Gateway – Historische Europafilme direkt in Kodi</summary>
+    <summary lang="en">European Film Gateway – Historic European films directly in Kodi</summary>
+    <description lang="de">
+      Zugang zu Tausenden historischer europaeischer Filme aus ueber 50 Filmarchiven
+      und Cinematheken. Stummfilme, Dokumentarfilme, Wochenschauen und Spielfilme
+      aus dem European Film Gateway direkt streambar in Kodi.
+      Inhalte von Deutsches Filminstitut, Cinematheque francaise, BFI und vielen mehr.
+    </description>
+    <description lang="en">
+      Access to thousands of historic European films from over 50 film archives
+      and cinematheques. Silent films, documentaries, newsreels and feature films
+      from the European Film Gateway directly streamable in Kodi.
+    </description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <website>https://www.europeanfilmgateway.eu</website>
+    <language>de en fr it es</language>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.justwatchtv" name="JustWatch TV Free" version="0.2.0" provider-name="Community prototype">
+  <requires><import addon="xbmc.python" version="3.0.0"/></requires>
+  <extension point="xbmc.python.pluginsource" library="default.py"><provides>video</provides></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Kostenlose JustWatch-TV-Titel durchsuchen</summary>
+    <summary lang="en_GB">Browse free JustWatch TV titles</summary>
+    <description lang="de_DE">Inoffizieller Prototyp. Nutzt die öffentliche JustWatch-Web-API; keine Anmeldung erforderlich. API und Verfügbarkeit können sich ändern.</description>
+    <description lang="en_GB">Unofficial prototype using the public JustWatch web API; no login required. API and availability may change.</description>
+    <platform>all</platform>
+    <assets><icon>resources/icon.png</icon></assets>
+    <license>MIT</license>
+  </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.playlistgen" name="Playlist Generator" version="0.1.8" provider-name="Sascha">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video audio</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Quick random lists from your library, Plex/Jellyfin/Emby add-ons and online add-ons</summary>
+    <summary lang="de_DE">Schnelle Zufallslisten aus Bibliothek, Plex-/Jellyfin-/Emby-Addons und Online-Addons</summary>
+    <description lang="en_GB">Pick sources once, then generate a small random list in a few clicks: choose sources, up to 3 genres, number of titles. Lists delete themselves after a configurable time.</description>
+    <description lang="de_DE">Quellen einmal einrichten, dann in wenigen Klicks eine kleine Zufallsliste erzeugen: Quellen, bis zu 3 Genres, Anzahl Titel. Listen löschen sich nach einstellbarer Zeit selbst.</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <license>GPL-3.0-or-later</license>
+  </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.retrothek"
+       name="Retrothek"
+       version="0.11.3"
+       provider-name="Xtra78">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Retrothek - Legale Public-Domain- und Mediathek-Inhalte</summary>
+        <summary lang="en_GB">Retrothek - Legal public domain and Mediathek content</summary>
+        <description lang="de_DE">Retrothek buendelt frei zugaengliche und rechtlich gepruefte Filme, Serien, Dokumentationen und Kinder-/Zeichentrickinhalte aus Public-Domain-Archiven (Internet Archive, publicdomainmovie.net, RetroFlix, RerunCentury) sowie oeffentlich-rechtlichen Mediatheken (ARD/ZDF Retro, MediathekViewWeb). Teile der ARD/ZDF-Retro-Anbindung basieren auf dem ARDundZDF-Addon von rols1, mit freundlicher Genehmigung.</description>
+        <description lang="en_GB">Retrothek bundles freely accessible and legally vetted movies, series, documentaries and kids/animation content from public domain archives (Internet Archive, publicdomainmovie.net, RetroFlix, RerunCentury) as well as German public broadcaster archives (ARD/ZDF Retro, MediathekViewWeb). Parts of the ARD/ZDF Retro integration are based on the ARDundZDF addon by rols1, used with kind permission.</description>
+        <news>[B]0.11.3[/B] Fix: LincOn lieferte trotz 74 Rohtreffer 0 Ergebnisse - das Link-Regex erfasste auch Kategorie-Navigationslinks, die in der Seite vor den echten Episoden stehen und dadurch die 25er-Verarbeitungsgrenze komplett fuellten. Regex auf echte Episoden-Links (classic-tv) eingeschraenkt, Navigationslinks (video-category) ausgeschlossen.
+[B]0.11.2[/B] Klarstellung: DHM Marshall funktioniert unter Dokus. Timeout-Fix, Diagnose-Logging fuer LincOn.
+[B]0.11.1[/B] ARD Retro: rols1s Verbesserungen uebernommen, Dubletten-Filter ergaenzt.
+[B]0.11.0[/B] Vier Provider anhand echter HTML-Dumps korrigiert.
+[B]0.10.2[/B] rols1s ARD-Retro-Update: lesbare Dauer-Anzeige ergaenzt.
+[B]0.10.1[/B] Fix: Wikimedia-Kategorien existierten nicht, echte Kategorie eingetragen.
+[B]0.10.0[/B] Neu: LincOn.com Classic TV als Serien-Quelle (direkt selbst gehostete MP4-Dateien).
+[B]0.9.0[/B] Neu: publicdomainmovie.org als eigenstaendiger Anbieter (Archive.org-Player-Embeds).
+[B]0.8.0[/B] VideoGold.de komplett entfernt. Fix: publicdomainmovie.net Kategorie-URLs korrigiert (dank HAR-Mitschnitt).
+[B]0.7.3[/B] Fix: eigene Log-Datei schrieb nach dem ersten Eintrag nie wieder. Diagnose-Logging fuer mehrere still leere Anbieter ergaenzt.
+[B]0.7.2[/B] Fix (dank HAR-Mitschnitt): RetroFlix lieferte bei Filme weiterhin 0 Treffer wegen absoluter statt relativer Links auf der Uebersichtsseite.
+[B]0.7.1[/B] URL-Checker-Timeout von 4 auf 8 Sekunden erhoeht - publicdomainmovie.net wurde faelschlich als "nicht erreichbar" gemeldet.
+[B]0.7.0[/B] Fix (danke rols1): Suche gab die Kategorie nie an die Provider weiter, ARD/ZDF Retro durchsuchte deshalb immer nur "serien" - jetzt ueberall korrekt durchgereicht.
+[B]0.6.2[/B] Eigenes Icon fuer "Nach Anbieter" ergaenzt.
+[B]0.6.1[/B] Neu: eigene, kompakte Log-Datei statt Suche im riesigen kodi.log. Fixes dank "Nach Anbieter"-Test: publicdomainmovie.net, Wikimedia User-Agent, RerunCentury-Genre korrigiert.
+[B]0.6.0[/B] Neu: "Nach Anbieter" als weiterer Unterpunkt in jeder Kategorie - listet Inhalte gezielt pro Anbieter, erleichtert das Eingrenzen toter URLs/fehlerhafter Quellen.
+[B]0.5.0[/B] Popcorntimes.tv komplett entfernt (nach Praxistest nicht mehr verfuegbar). Neu: British Council Film Archive und DHM Zeughauskino (Marshall-Plan-Filme) als Dokus-Quellen (beide Vimeo-Embeds). ARD/ZDF Retro: echter, funktionierender Endpunkt dank rols1 (HLS-Stream-Aufloesung, ZDF vorerst zurueckgestellt).
+[B]0.4.3[/B] Archive.org: bessere Datei-Auswahl beim Abspielen (bevorzugt Streaming-Ableitungen wie _512kb.mp4 statt der schlicht groessten Datei, die oft ein unstreambares Master-File ist) - sollte "error opening" bei manchen Titeln beheben.
+[B]0.4.2[/B] Eigene Icons fuer "Neu hinzugefuegt" und "Cache jetzt leeren" ergaenzt.
+[B]0.4.1[/B] Fix: In der gefilterten A-Z-Buchstaben-Ansicht wurden faelschlich immer noch Suche/A-Z/Neu/Jahrzehnte mit angezeigt - jetzt nur noch auf der obersten Ebene. ABC-Icon fuer die einzelnen Buchstaben im Register ergaenzt.
+[B]0.4.0[/B] Neu: echtes A-Z-Register (Buchstaben A-Z + 0-9) statt einer einzigen langen Liste - nur Buchstaben mit tatsaechlichen Treffern werden angezeigt, danach gefilterte Liste pro Buchstabe.
+[B]0.3.8[/B] Fix (danke rols1): ARD Retro-URL brauchte embedded=true statt embedded=false - sonst bleiben die Listen leer, da der geladene Cluster keinen auswertbaren Inhalt hat. rols1 arbeitet noch an Stream-URLs und Serien/Dokus/Kids-Zuordnung fuer diesen Provider.
+[B]0.3.7[/B] Fix (danke rols1): Listen wurden stillschweigend auf 50 Treffer gekappt, obwohl z.B. Internet Archive allein 199 Filme lieferte - kuenstliche Begrenzung entfernt, da keine Paginierung in der UI existiert. Behebt vermutlich auch den Eindruck fehlerhafter A-Z-Sortierung. Suche innerhalb einer Kategorie wird noch untersucht.
+[B]0.3.6[/B] Fix (danke rols1): "Meine Retros" zeigte keine Titel, weil beim Hinzufuegen nur provider/id/category uebergeben wurden. Titel, Thumbnail, Jahr, Dauer und Genre werden jetzt mitgespeichert.
+[B]0.3.5[/B] Korrektur dank rols1: Es GIBT einen echten ARD Video-Retro-Endpunkt (page-gateway/pages/ard/editorial/retro), meine vorherige Annahme war falsch. ardzdf_retro.py nutzt jetzt den echten Endpunkt statt der Titelliste-Behelfsloesung.
+[B]0.3.4[/B] A-Z- und Jahrzehnte-Icons in jeder Kategorie ergaenzt, echter Fanart-Hintergrund hinterlegt (vorher fehlte die Datei trotz Referenz in addon.xml).
+[B]0.3.3[/B] Filme-Absturz behoben: Archive.org liefert auch 'title'/'description' teils als Liste statt Text (analog zum 'year'-Bug). RetroFlix baute bei Serien eine kaputte URL (/browse/None/) - wird jetzt sauber uebersprungen. RerunCentury: echte Genre-URL-Struktur uebernommen (Title_Case statt kleingeschrieben), behebt die 404-Fehler.
+[B]0.3.2[/B] A-Z zeigte trotz kuerzerer Ladezeit weiterhin nichts an: ungeschuetztes Gesamt-Timeout auf as_completed() liess das Skript bei einem langsamen Provider abstuerzen. Timeout entfernt, zusaetzlich globales Sicherheitsnetz gegen unerwartete Fehler ergaenzt.
+[B]0.3.1[/B] A-Z war extrem langsam (Provider wurden nacheinander statt parallel abgefragt) - jetzt parallelisiert. Doppelter endOfDirectory-Aufruf nach dem Einrichtungsassistenten behoben (fuehrte zu leerem Bildschirm), Ja/Nein-Abfrage 'Addon jetzt starten?' ergaenzt. download_path Setting-Definition weiter bereinigt.
+[B]0.3.0[/B] Cache wird jetzt automatisch bei einer neuen Addon-Version geleert (verhindert veraltete Daten nach Bugfixes). Neu: 'Cache jetzt leeren' im Hauptmenue, optionale Abfrage beim Start (Settings, standardmaessig aus).
+[B]0.2.2[/B] Jahrzehnte-Navigation lieferte kaum/keine Treffer, da Archive.org das 'year'-Feld manchmal als Liste statt Einzelwert liefert - safe_int() robust gemacht, Fallback auf 'date'-Feld ergaenzt.
+[B]0.2.1[/B] URL-Checker faelschte 403-Fehler bei VideoGold/DocumentaryStorm/Wikimedia wegen fehlendem User-Agent - behoben.
+[B]0.2.0[/B] Popcorntimes.tv ergaenzt, Dokus-Absturz behoben, download_path- und setPlot-Fehler (danke rols1) behoben, URL-Checker, Cache-Cleaner und Jahrzehnte-Navigation ergaenzt.</news>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <source>https://github.com/xtra78/plugin.video.retrothek</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.snapit" name="SnapIT" version="0.6.1" provider-name="Sascha">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="inputstream.adaptive" optional="true"/>
+    <import addon="script.module.inputstreamhelper" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <summary lang="de_DE">Frei zugängliche Live-Kanäle und Mediatheken von FreeLiveSportsTV, Haystack News, WedoTV und Wocoo</summary>
+    <summary lang="en_GB">Freely accessible live channels and on-demand libraries from FreeLiveSportsTV, Haystack News and Wocoo</summary>
+    <description lang="de_DE">SnapIT bündelt frei zugängliche Streams von vier Anbietern in einem Addon:[CR][CR]FreeLiveSportsTV – https://freelivesports.tv (Sport-Livekanäle und Sport-Mediathek)[CR]Haystack News – https://www.haystack.tv (lokale und weltweite Nachrichten)[CR]WedoTV – https://www.wedotv.com (kostenlose TV-Kanäle und Mediathek)[CR]Wocoo – https://wocoo.tv (freie Filme und Kurzfilme)[CR][CR]Alle Inhalte stammen von den genannten Anbietern und gehören den jeweiligen Rechteinhabern. SnapIT umgeht keine Paywall und keinen Login.</description>
+    <description lang="en_GB">SnapIT bundles freely accessible streams from four providers in one add-on:[CR][CR]FreeLiveSportsTV – https://freelivesports.tv (live sports channels and on-demand library)[CR]Haystack News – https://www.haystack.tv (local and world news)[CR]Wocoo – https://wocoo.tv (free films and shorts)[CR][CR]All content comes from the providers named above and belongs to its respective rights holders. SnapIT does not bypass any paywall or login.</description>
+    <news>0.6.1: WedoTV: Region wählbar (Österreich, Deutschland, Schweiz) in den Einstellungen.[CR]0.6.0: Neue Grafiken (Icons, Fanart, Menü-Icons); Wocoo bindet vorhandene Untertitel (Originalsprache, Deutsch) ein.[CR]0.5.0: Favoriten (Kontextmenü, Startseite) – gegliedert nach Anbieter.[CR]0.4.1: WedoTV: Kanäle ohne Stream-URL werden ausgeblendet.[CR]0.4.0: Neuer Anbieter WedoTV (Live-FAST-Kanäle und Mediathek).[CR]0.3.0: Wocoo: Serien (Staffeln und Episoden) sowie Filter Spielfilme / Serien / Kurzfilme.[CR]0.2.3: Wocoo: Widevine-Prüfung über InputStream Helper, keine veraltete manifest_type-Einstellung ab Kodi 21.[CR]0.2.2: Log nennt jetzt Quelle und Wiedergabeart.[CR]0.2.1: Wocoo erscheint nur noch unter VOD (keine Live-Kanäle mehr).[CR]0.2.0: Wocoo-Modul (Filme und Kurzfilme, DASH mit Widevine über InputStream Adaptive).[CR]0.1.2: FLS legt neue Gäste wie der Web-Client an (register/guest).[CR]0.1.1: FLS-Anmeldung mit genauerer Fehlerprotokollierung.[CR]0.1.0: Erste Version – Menü Home / Live-TV / VOD / Cache, FreeLiveSportsTV- und Haystack-Modul, Wocoo in Vorbereitung.</news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.wikiflix"
+       name="WikiFlix"
+       version="1.2.1"
+       provider-name="WikiFlix Kodi Addon">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">WikiFlix – Öffentliche Domain Filme kostenlos streamen</summary>
+    <summary lang="en">WikiFlix – Stream public domain films for free</summary>
+    <description lang="de">
+      WikiFlix bringt über 4800 gemeinfreie Filme direkt in Kodi. Inhalte stammen von
+      Wikimedia Commons, Internet Archive und YouTube. Stöbere nach Jahr, Genre, Land,
+      Regisseur oder Schauspieler. Keine Anmeldung, keine Werbung, alles kostenlos.
+    </description>
+    <description lang="en">
+      WikiFlix brings over 4800 public domain films directly into Kodi. Content is hosted
+      on Wikimedia Commons, Internet Archive, and YouTube. Browse by year, genre, country,
+      director, or actor. No login, no ads, completely free.
+    </description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <website>https://wikiflix.toolforge.org</website>
+    <language>de en</language>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+  </extension>
+
+</addon>
+</addons>
