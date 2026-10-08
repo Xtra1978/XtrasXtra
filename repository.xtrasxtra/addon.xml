@@ -5,9 +5,9 @@
     </requires>
     <extension point="xbmc.addon.repository" name="XtrasXtra Repository">
         <dir minversion="19.0.0">
-            <info compressed="false">https://raw.githubusercontent.com/Xtra1978/XtrasXtra_Repo/main/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Xtra1978/XtrasXtra_Repo/main/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Xtra1978/XtrasXtra_Repo/main/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/Xtra1978/XtrasXtra/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Xtra1978/XtrasXtra/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Xtra1978/XtrasXtra/main/</datadir>
             <hashes>false</hashes>
         </dir>
     </extension>
